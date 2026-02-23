@@ -1,6 +1,5 @@
 public class Calculadora {
-     
-    public static double Adicionar(double n1, double n2) {
+   public static double Adicionar(double n1, double n2) {
         return n1+ n2;
     }
     public static double Subtrair(double n1, double n2){
@@ -14,16 +13,16 @@ public class Calculadora {
     }
         void main(){
             double n1, n2;
-            int opcao=1;
-            
+            int opcao=0;
             IO.println("Digite o numero 1");
             n1 = Double.parseDouble(IO.readln());
 
             IO.println("Digite o numero 2");
             n2 = Double.parseDouble(IO.readln());
-            
+            IO.println(" Escolha:Opção 1=Somar,Opção 2=Subtrair,Opçao3=Multiplicar,Opçao4=Dividir");
+            opcao = Integer.parseInt(IO.readln());
 
-            switch (opcao) {
+         switch (opcao) {
                 case 1:
                         IO.println("Soma:"+ Adicionar(n1, n2));
                     break;
@@ -38,13 +37,9 @@ public class Calculadora {
                     break;         
             
                 default:
-                         IO.println("Soma:");
+                         IO.println("Opção invalida");
                     break;
             }
-                            
-             
-            
-          
 
         }
 }
