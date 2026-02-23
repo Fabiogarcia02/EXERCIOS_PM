@@ -1,18 +1,26 @@
-    
-    public class App {
-        public static void main(String[] args) {
-            int n;
-            int n1;
-            int soma;
-            double media;
-            IO.println("Digite uma quantidade de números para mostrar a soma e a média:");
+public class App {
+    public static void main(String[] args) {
+        
+        int n;
+        int n1;
+        int soma = 0;
+        double media;
+        int [] opa = new int[5];
 
-            n= Integer.parseInt(IO.readln("Digite:"));
-            for(int i=0; i<n; i++){
-         IO.readln("Digite o numero:"+i+1);
-                soma+= n1;
-            }
+        IO.println("Digite uma quantidade de números:");
+        n = Integer.parseInt(IO.readln());  
 
-            IO.println("Você digitou: " + n);
+        for (int i = 0; i < n; i++) {
+            IO.println("Digite o número " + (i + 1) + ":");
+            n1 = Integer.parseInt(IO.readln());  //sempre converter para ler int ou outras 
+            // variaveis que não são strings
+            soma += n1;
+            opa[i]=n1;
         }
+
+        media = (double) soma / n;
+
+        IO.println("Soma = " + soma);
+        IO.println("Média = " + media);
     }
+}
