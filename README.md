@@ -1,1 +1,1 @@
-Repositorio dedicadoa estudos para a disciplina de Programação Modular
+Repositorio dedicado a estudos/exercisios para a disciplina de Programação Modular
