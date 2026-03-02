@@ -1,19 +1,21 @@
+
 public class CalculadoraEco {
+    static final int MES=30;//Constante em JAVA
 
 public static double TV(int HORA){
-        return (10.73 *HORA)*30;
+        return (10.73 *HORA)*MES;
 }
 public static double Lampada(int HORA){
-        return (1.11 *HORA)*30;
+        return (1.11 *HORA)*MES;
 }
 public static double Geladadeira(int HORA){
-        return (8.14 *HORA)*30;
+        return (8.14 *HORA)*MES;
 }
 public static double Ventilador(int HORA){
-        return (2.96 *HORA)*30;
+        return (2.96 *HORA)*MES;
 }
 public static double AR(int HORA){
-        return  (80.29*HORA)*30;
+        return  (80.29*HORA)*MES;
 }
 
     void main(){
@@ -22,7 +24,8 @@ public static double AR(int HORA){
 
 
        IO.println("Lista de aparelhos:1-SmartTV,2-Lampada Inteligente,3-Geladadeira Frost-Free,4-Ventilador,5-Ar-Condicionado");
-       IO.println("Digite o numero dos aparelhos que voce faz o uso:");
+       IO.println("Digite a quantodade de aparelhos que voce faz o uso:");
+
        QUANTIDADE= Integer.parseInt(IO.readln());
        int[] APARELHOS= new int[QUANTIDADE];
        int[] HORAS = new int[QUANTIDADE];
