@@ -15,6 +15,7 @@ public class Pizza {
         return precoinit +  (qtdingredientes * valoringrediente);
     }
             //alteração de adicao?
+            
     public boolean podeAlterar(int quantos) {
         return (quantos + qtdingredientes >= 0 &&
                 quantos + qtdingredientes <= MAXingredientes);
@@ -44,7 +45,8 @@ public class Pizza {
     
     //   MÉTODO COMPRAR PIZZA
     
-    public static Pizza comprarPizza() {
+    public static Pizza comprarPizza() {    //colocar  no app como programa principal e passar para o caderno
+        
 
     Pizza p = new Pizza();
 
