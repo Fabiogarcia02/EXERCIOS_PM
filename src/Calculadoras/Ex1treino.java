@@ -1,3 +1,4 @@
+package Calculadoras;
 public class Ex1treino {
     
     public static void Menu() {

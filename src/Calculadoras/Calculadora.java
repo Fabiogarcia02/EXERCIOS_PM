@@ -1,3 +1,4 @@
+package Calculadoras;
 public class Calculadora {
    public static double Adicionar(double n1, double n2) {
         return n1+ n2;

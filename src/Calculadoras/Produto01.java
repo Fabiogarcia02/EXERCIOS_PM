@@ -1,3 +1,4 @@
+package Calculadoras;
 public class Produto01 {
     String descricao;
     double precoCusto;  //atributos

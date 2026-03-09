@@ -1,3 +1,4 @@
+package Calculadoras;
 
 public class CalculadoraEco {
     static final int MES=30;//Constante em JAVA

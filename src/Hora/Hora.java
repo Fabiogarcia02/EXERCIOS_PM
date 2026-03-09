@@ -1,3 +1,4 @@
+package Hora;
 public class Hora {
     private int horas;
     private int  minutos;
